@@ -1,0 +1,6 @@
+word	count
+shradha	1
+ambe	3
+anjali	2
+anu	2
+shail	1
