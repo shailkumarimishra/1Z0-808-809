@@ -1,10 +1,15 @@
 package map;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 /*
 remove
@@ -39,18 +44,18 @@ Q How HashMap internally work?
 
  */
 
+class Whizlab<T>{
+	
+}
 public class HashMapExample {
 	
 	public static void main(String[] args) {
 		Map <Integer,String> map= new HashMap<>();
-		map.put(25,"A");
-		map.put(33,"B");
-		map.put(32, "C");
 		map.put(34, "D");
 		map.put(5, "E");
 		map.put(33,"F");
 		map.put(null,"G");
-		String value = map.get(3);
+	String value = map.get(3);
 		System.out.println(value);
 		for(Map.Entry<Integer, String>e:map.entrySet()) {
 			System.out.println(e.getKey()+" "+e.getValue());
@@ -63,6 +68,7 @@ public class HashMapExample {
 		Stream<String> stream = Arrays.stream(str);
 		Map<String, Long> collect = stream.collect(Collectors.groupingBy(String::toString,Collectors.counting()));
 		collect.forEach((k,v)->System.out.println(k+" "+v));
+		
 	}
 	
 	
