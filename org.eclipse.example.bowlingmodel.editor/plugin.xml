@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated bowling -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="Bowling.presentation.BowlingModelWizardID"
+            name="%_UI_BowlingModelWizard_label"
+            class="Bowling.presentation.BowlingModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/BowlingModelFile.gif">
+         <description>%_UI_BowlingModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated bowling -->
+      <editor
+            id="Bowling.presentation.BowlingEditorID"
+            name="%_UI_BowlingEditor_label"
+            icon="icons/full/obj16/BowlingModelFile.gif"
+            extensions="bowling"
+            class="Bowling.presentation.BowlingEditor"
+            contributorClass="Bowling.presentation.BowlingActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
